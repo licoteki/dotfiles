@@ -32,7 +32,7 @@ if [ ! -d $NVIM ] && [ ! -L $NVIM ]; then
 		mkdir $CONFIG
 	fi
 	echo "[+] cleate symlink $NVIM -> $NVIM"
-	ln -s $CURRENT/nvim $HOME
+	ln -s $CURRENT/nvim $NVIM
 else
 	echo -e "[+] $NVIM is already exists.\n"
 fi

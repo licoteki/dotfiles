@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
   Plug 'mattn/vim-sonictemplate'
+  Plug 'skanehira/jumpcursor.vim'
 call plug#end()
 
 " NERDTREE config
@@ -48,3 +49,6 @@ nmap <C-n> <Plug>AirlineSelectNextTab
 let g:sonictemplate_vim_template_dir = [
   \ '$XDG_CONFIG_HOME/nvim/template'
   \]
+
+" jumpcursor.vim config
+nmap jp <Plug>(jumpcursor-jump)
