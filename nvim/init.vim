@@ -35,6 +35,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
   Plug 'mattn/vim-sonictemplate'
   Plug 'skanehira/jumpcursor.vim'
+  Plug 'alaviss/nim.nvim'
 call plug#end()
 
 " NERDTREE config
@@ -51,4 +52,4 @@ let g:sonictemplate_vim_template_dir = [
   \]
 
 " jumpcursor.vim config
-nmap jp <Plug>(jumpcursor-jump)
+nmap <C-p> <Plug>(jumpcursor-jump)

@@ -1,0 +1,8 @@
+{
+  "languageserver": {
+    "nim": {
+      "command": "\/home\/rikoteki\/.nimble\/pkgs\/nimlsp-0.4.1\/nimlsp",
+      "filetypes": ["nim"]
+    }
+  }
+}
