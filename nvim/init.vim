@@ -14,7 +14,8 @@ set splitright
 set clipboard=unnamed
 " 検索にヒットした文字列をハイライト
 set hls
-
+" 折りたたみ無効 
+set nofoldenable
 
 " Grafics config
 set pumblend=10
