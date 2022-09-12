@@ -36,8 +36,22 @@ if [ ! -d $NVIM ] && [ ! -L $NVIM ]; then
 else
 	echo -e "[+] $NVIM is already exists.\n"
 fi
-echo "##### install nvim #####"
-sudo apt install -y neovim
+#echo "##### install nvim #####"
+#sudo apt install -y neovim
 
 echo -e "\n"
+
+echo "##### fish config #####"
+FISH="$HOME/.config/fish"
+CONFIG="$HOME/.config"
+
+if [ ! -d $FISH ] && [ ! -L $FISH ]; then
+	if [ ! -d $CONFIG ]; then
+		mkdir $CONFIG
+	fi
+	echo "[+] cleate symlink $FISH -> $FISH"
+	ln -s $CURRENT/fish $FISH
+else
+	echo -e "[+] $FISH is already exists.\n"
+fi
 echo "Finished installing dotfiles"

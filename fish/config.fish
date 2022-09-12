@@ -1,16 +1,46 @@
+# rikoteki default settings
 function fish_greeting
-    echo "Welcome to Parrot OS"
+    echo "Welcome to fish shell"
 end
 
-function fish_prompt
-    echo \n(set_color red)"┌["$USER"@"(set_color cyan)"$hostname"(set_color red)"]─["(set_color yellow)(date "+%H:%M-%d/%m")(set_color red)"]─["(set_color blue)"$PWD"(set_color red)"]"
-    echo (set_color red)"└╼"(set_color green)"$USER"(set_color yellow)(set_color yellow)"\$"(set_color normal)
+function fish_prompt --description 'Write out the prompt'
+    echo 
+    set -l last_status $status
+
+    # User
+    set_color $fish_color_user
+    echo -n $USER
+    set_color normal
+
+    echo -n '@'
+
+    # Host
+    set_color $fish_color_host
+    echo -n (prompt_hostname)
+    set_color normal
+
+    echo -n ':'
+
+    # PWD
+    set_color $fish_color_cwd
+    echo -n (prompt_pwd)
+    set_color normal
+
+    __terlar_git_prompt
+    fish_hg_prompt
+    echo
+
+    if not test $last_status -eq 0
+        set_color $fish_color_error
+    end
+
+    echo -n '➤ '
+    set_color normal
 end
 
 function fish_right_prompt
     echo (date "+%H:%M")
 end
-
 
 set PATH ~/.local/bin /snap/bin /usr/sandbox/ /usr/local/bin /usr/bin /bin /usr/local/games /usr/games /usr/share/games /usr/local/sbin /usr/sbin /sbin $PATH
 
