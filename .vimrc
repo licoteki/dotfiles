@@ -6,6 +6,18 @@ syntax on
 set mouse=a 
 "ヤンクでクリップボード使用
 set clipboard=unnamed,autoselect
-
 "colorschmeにmolokai
 colorscheme molokai
+" Tab入力時にをスペース挿入
+set expandtab
+" Tabの幅を設定
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+" netrwを有効化
+filetype plugin on
+
+" plugin manager
+call plug#begin()
+
+call plug#end()
