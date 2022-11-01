@@ -42,7 +42,12 @@ function fish_right_prompt
     echo (date "+%H:%M")
 end
 
-set PATH ~/.local/bin /snap/bin /usr/sandbox/ /usr/local/bin /usr/bin /bin /usr/local/games /usr/games /usr/share/games /usr/local/sbin /usr/sbin /sbin $PATH
+set SQLPATH /opt/oracle/instantclient_21_7 $SQLPATH
+set TNS_ADMIN /opt/oracle/instantclient_21_7 $TNS_ADMIN
+set LD_LIBRARY_PATH /opt/oracle/instantclient_21_7 $LD_LIBRARY_PATH
+set ORACLE_HOME /opt/oracle/instantclient_21_7 $ORACLE_HOME
+
+set PATH /opt /opt/oracle/instantclient_21_7 $HOME/.cargo/bin $HOME/go/bin ~/.local/bin /snap/bin /usr/sandbox/ /usr/local/bin /usr/bin /bin /usr/local/games /usr/games /usr/share/games /usr/local/sbin /usr/sbin /sbin $PATH
 
 alias ls='ls -lh --color=auto'
 alias dir='dir --color=auto'

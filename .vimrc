@@ -14,6 +14,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
+"自動インデントを無効化
+set noautoindent
 " netrwを有効化
 filetype plugin on
 
