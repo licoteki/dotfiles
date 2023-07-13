@@ -18,6 +18,8 @@ set tabstop=2
 set noautoindent
 " netrwを有効化
 filetype plugin on
+"折り返さない
+set nowrap
 
 " plugin manager
 call plug#begin()
