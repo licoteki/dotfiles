@@ -6,8 +6,8 @@ syntax on
 set mouse=a 
 "ヤンクでクリップボード使用
 set clipboard=unnamed,autoselect
-"colorschmeにmolokai
-colorscheme molokai
+"colorschme
+colorscheme iceberg
 " Tab入力時にをスペース挿入
 set expandtab
 " Tabの幅を設定
@@ -17,11 +17,22 @@ set tabstop=2
 "自動インデントを無効化
 set noautoindent
 " netrwを有効化
-filetype plugin on
+"filetype plugin on
 "折り返さない
 set nowrap
+" lightline
+set laststatus=2
+set cursorline
+set cursorcolumn
 
 " plugin manager
 call plug#begin()
-
+  Plug 'itchyny/lightline.vim'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'mattn/vim-lsp-settings'
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
+
+" 各種設定の読み込み
+call map(sort(split(globpath(&runtimepath, '_config/*.vim'))), {->[execute('exec "so" v:val')]})
