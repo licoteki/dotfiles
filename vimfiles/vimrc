@@ -7,6 +7,8 @@ set mouse=a
 "ヤンクでクリップボード使用
 set clipboard=unnamed,autoselect
 "colorschme
+set termguicolors
+set background=light
 colorscheme iceberg
 " Tab入力時にをスペース挿入
 set expandtab
