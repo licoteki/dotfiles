@@ -1,1 +1,0 @@
-mklink %HOMEPATH%\vimfiles %HOMEPATH%\dotfiles\vimfiless
