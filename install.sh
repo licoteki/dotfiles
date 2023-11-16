@@ -23,18 +23,14 @@ do
 	fi
 done
 
-echo "##### nvim config #####"
-NVIM="$HOME/.config/nvim"
-CONFIG="$HOME/.config"
+echo "##### vim config #####"
+VIM="$HOME/.vim"
 
-if [ ! -d $NVIM ] && [ ! -L $NVIM ]; then
-	if [ ! -d $CONFIG ]; then
-		mkdir $CONFIG
-	fi
-	echo "[+] cleate symlink $NVIM -> $NVIM"
-	ln -s $CURRENT/nvim $NVIM
+if [ ! -d $VIM ] && [ ! -L $VIM ]; then
+	echo "[+] cleate symlink $VIM -> $CURRENT/vimfiles"
+	ln -s $CURRENT/vimfiles $VIM
 else
-	echo -e "[+] $NVIM is already exists.\n"
+	echo -e "[+] $VIM is already exists.\n"
 fi
 #echo "##### install nvim #####"
 #sudo apt install -y neovim
