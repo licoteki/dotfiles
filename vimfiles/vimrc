@@ -31,7 +31,7 @@ set cursorcolumn
 call plug#begin()
   Plug 'lambdalisue/fern.vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'iamcco/arkdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+  Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'mattn/vim-sonictemplate'
 call plug#end()
 
