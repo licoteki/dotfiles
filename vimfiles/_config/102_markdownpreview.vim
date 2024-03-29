@@ -111,11 +111,11 @@ let g:mkdp_combine_preview = 0
 let g:mkdp_combine_preview_auto_refresh = 1
 
 " normal/insert
-<Plug>MarkdownPreview
-<Plug>MarkdownPreviewStop
-<Plug>MarkdownPreviewToggle
+"<Plug>MarkdownPreview
+"<Plug>MarkdownPreviewStop
+"<Plug>MarkdownPreviewToggle
 
 " example
-nmap <C-s> <Plug>MarkdownPreview
-nmap <M-s> <Plug>MarkdownPreviewStop
-nmap <C-p> <Plug>MarkdownPreviewToggle
+"nmap <C-s> <Plug>MarkdownPreview
+"nmap <M-s> <Plug>MarkdownPreviewStop
+"nmap <C-p> <Plug>MarkdownPreviewToggle
