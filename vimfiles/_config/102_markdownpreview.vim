@@ -11,7 +11,7 @@ let g:mkdp_auto_close = 1
 " when leaving insert mode. Default 0 is auto-refresh Markdown as you edit or
 " move the cursor
 " default: 0
-let g:mkdp_refresh_slow = 0
+let g:mkdp_refresh_slow = 1
 
 " set to 1, the MarkdownPreview command can be used for all files,
 " by default it can be use in Markdown files only
