@@ -29,11 +29,10 @@ set cursorcolumn
 
 " plugin manager
 call plug#begin()
-  Plug 'itchyny/lightline.vim'
-  Plug 'prabirshrestha/vim-lsp'
-  Plug 'mattn/vim-lsp-settings'
-  Plug 'prabirshrestha/asyncomplete.vim'
-  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'lambdalisue/fern.vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'iamcco/arkdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+  Plug 'mattn/vim-sonictemplate'
 call plug#end()
 
 " 各種設定の読み込み
