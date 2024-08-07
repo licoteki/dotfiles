@@ -35,5 +35,9 @@ call plug#begin()
   Plug 'mattn/vim-sonictemplate'
 call plug#end()
 
+let g:sonictemplate_vim_template_dir = [
+      \ '~/dotfiles/vimfiles/_config/templates'
+      \]
+
 " 各種設定の読み込み
 call map(sort(split(globpath(&runtimepath, '_config/*.vim'))), {->[execute('exec "so" v:val')]})

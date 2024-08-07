@@ -90,7 +90,7 @@ let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
 
 " use a custom location for images
-let g:mkdp_images_path = ~/.markdown_images
+"let g:mkdp_images_path = ~/.markdown_images
 
 " recognized filetypes
 " these filetypes will have MarkdownPreview... commands
