@@ -27,14 +27,28 @@ set laststatus=2
 set cursorline
 set cursorcolumn
 
+" complete
+set completeopt=menuone,noselect
+
 " plugin manager
 call plug#begin()
   Plug 'lambdalisue/fern.vim'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'lambdalisue/nerdfont.vim'
+  Plug 'lambdalisue/fern-renderer-nerdfont.vim'
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'mattn/vim-sonictemplate'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'mattn/vim-lsp-settings'
+  Plug 'mattn/vim-lsp-icons'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'evanleck/vim-svelte'
+  Plug 'lifepillar/vim-colortemplate'
 call plug#end()
-
 
 " 各種設定の読み込み
 call map(sort(split(globpath(&runtimepath, '_config/*.vim'))), {->[execute('exec "so" v:val')]})

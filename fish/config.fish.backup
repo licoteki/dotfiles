@@ -47,7 +47,7 @@ set TNS_ADMIN /opt/oracle/instantclient_21_7 $TNS_ADMIN
 set LD_LIBRARY_PATH /opt/oracle/instantclient_21_7 $LD_LIBRARY_PATH
 set ORACLE_HOME /opt/oracle/instantclient_21_7 $ORACLE_HOME
 
-set PATH $HOME/.ghcup/bin /opt/google-cloud-sdk  $HOME/.cargo/bin /usr/local/go/bin ~/.local/bin /snap/bin /usr/sandbox/ /usr/local/bin /usr/bin /bin /usr/local/games /usr/games /usr/share/games /usr/local/sbin /usr/sbin /sbin $PATH
+set PATH /opt/google-cloud-sdk  $HOME/.cargo/bin /usr/local/go/bin ~/.local/bin /snap/bin /usr/sandbox/ /usr/local/bin /usr/bin /bin /usr/local/games /usr/games /usr/share/games /usr/local/sbin /usr/sbin /sbin $PATH
 
 alias ls='ls -lh --color=auto'
 alias dir='dir --color=auto'
@@ -56,6 +56,3 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/opt/google-cloud-sdk/path.fish.inc' ]; . '/opt/google-cloud-sdk/path.fish.inc'; end

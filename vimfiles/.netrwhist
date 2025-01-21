@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/rikoteki/Desktop/Repos/D4C/backend/adapter/src/model'
+let g:netrw_dirhist_8='/home/rikoteki/Desktop/Repos/D4C/frontend/src'
+let g:netrw_dirhist_7='/home/rikoteki/Desktop/Repos/D4C/backend/api'
+let g:netrw_dirhist_6='/home/rikoteki/Desktop/Repos/D4C/backend/src'
+let g:netrw_dirhist_5='/home/rikoteki/Desktop/Repos/pppf/web/src/routes/project/[slug]/vulnerability'
+let g:netrw_dirhist_4='/home/rikoteki/Desktop/Repos/pppf/web/src/routes/project/[slug]'
+let g:netrw_dirhist_3='/home/rikoteki/Desktop/Repos/pppf/web/src/lib/server/types/vulnerability'
+let g:netrw_dirhist_2='/home/rikoteki/Desktop/Repos/pppf/web/src/routes/project/[slug]/vulnerability'
+let g:netrw_dirhist_1='/home/rikoteki/Desktop/Repos/pppf/web/src/routes/project/[slug]'
+let g:netrw_dirhist_0='/home/rikoteki/Desktop/Repos/pppf/web/src/routes/project'
